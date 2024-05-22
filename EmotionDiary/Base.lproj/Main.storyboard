@@ -3,7 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -368,11 +368,22 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpH-DF-hdA">
+                                <rect key="frame" x="163" y="688" width="67.333333333333314" height="34.333333333333371"/>
+                                <color key="tintColor" red="0.74027383209999997" green="0.17911649539999999" blue="0.095695537600000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Reset"/>
+                                <connections>
+                                    <action selector="resetEmotionButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzQ-LY-0L3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JgE-hf-zKd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7ji-dS-aNG"/>
+                            <constraint firstItem="UpH-DF-hdA" firstAttribute="top" secondItem="rPU-pA-NOW" secondAttribute="bottom" constant="83" id="Nzm-5E-yzi"/>
+                            <constraint firstItem="UpH-DF-hdA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SbR-Sc-j85"/>
                             <constraint firstItem="JgE-hf-zKd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="erS-lq-Zgo"/>
                             <constraint firstItem="rPU-pA-NOW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ggb-Mp-jQN"/>
                             <constraint firstItem="rPU-pA-NOW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k8h-iH-6lP"/>
